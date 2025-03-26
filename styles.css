@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#calculator {
+  width: 40%;
+  aspect-ratio: 1 / 1;
+  background-color: slategray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2%;
+  padding: 2%;
+  font-size: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+button {
+  font-size: inherit;
+  border-radius: 24%;
+}
+
+#display {
+  background-color: lightgray;
+  text-align: end;
+  padding: 5%;
+  border-radius: inherit;
+  align-self: stretch;
+}
+
+#erase-buttons {
+  display: flex;
+  gap: 4px;
+  width: 50%;
+}
+
+#erase-buttons button {
+  flex: 1;
+}
+
+#button-grid {
+  display: flex;
+  gap: 4px;
+}
+
+
+#numbers {
+  display: flex;
+  flex-wrap: wrap;
+  flex: auto;
+  width: 80%;
+  row-gap: 2px;
+  column-gap: 1px;
+}
+
+#numbers button {
+  width: 32%;
+}
+
+#operations {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  gap: 4px;
+  width: 16%;
+}
