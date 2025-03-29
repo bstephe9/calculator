@@ -26,6 +26,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+  gap: 2vh;
 }
 
 button {
@@ -33,12 +34,25 @@ button {
   border-radius: 24%;
 }
 
-#display {
-  background-color: lightgray;
-  text-align: end;
-  padding: 5%;
-  border-radius: inherit;
+#display-section {
+  display: flex;
+  flex-direction: column;
   align-self: stretch;
+  background-color: lightgray;
+  padding: 3%;
+  border-radius: inherit;
+  min-height: 24.23%;
+}
+
+#secondary-display {
+  text-align: end;
+  font-size: 0.5em;
+  color: dimgray;
+  min-height: 40%;
+}
+
+#primary-display {
+  text-align: end;
 }
 
 #erase-buttons {
@@ -57,7 +71,7 @@ button {
 }
 
 
-#numbers {
+#number-section {
   display: flex;
   flex-wrap: wrap;
   flex: auto;
@@ -66,7 +80,7 @@ button {
   column-gap: 1px;
 }
 
-#numbers button {
+#number-section button {
   width: 32%;
 }
 
