@@ -84,7 +84,7 @@ button {
   width: 32%;
 }
 
-#operations {
+#operators-section {
   display: flex;
   flex-direction: column;
   flex: auto;
